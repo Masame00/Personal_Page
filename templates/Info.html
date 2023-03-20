@@ -1,0 +1,170 @@
+<!--
+- This code's main purpose is to create the personal page with detail background and information of the name provided
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Professional Personal Page</title>
+  <style>
+      /*
+      - This is the CSS section for styling the page such as inserting the background and change text into light color
+      */
+    body {
+      font-family: Times New Roman, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('https://images.unsplash.com/photo-1528722828814-77b9b83aafb2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&w=1000&q=80');
+      background-size: cover;
+      color: #fff;
+    }
+
+    header {
+      background-color: #000;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+{#    @keyframes mymove {#}
+{#  from {background-color: red;}#}
+{#  to {background-color: blue;}#}
+{#}#}
+
+    h1 {
+      margin: 0;
+      font-size: 36px;
+      {#animation: mymove 5s infinite;#}
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      font-size: 18px;
+      margin: 0 10px;
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+    }
+
+    nav a:hover {
+      color: #000;
+      background-color: #fff;
+      border-radius: 3px;
+    }
+
+    main {
+      margin: 20px;
+    }
+
+    section {
+      margin-bottom: 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      border-radius: 3px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    .resume {
+      background-color: #333;
+      border-radius: 3px;
+      padding: 20px;
+      color: #fff;
+    }
+
+    .resume h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .resume ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .resume li {
+      margin-bottom: 5px;
+    }
+
+    .linkedin,
+    .github {
+      background-color: #fff;
+      border-radius: 3px;
+      color: #000;
+      display: inline-block;
+      margin-right: 10px;
+      padding: 10px;
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .linkedin:hover,
+    .github:hover {
+      background-color: #0077B5;
+      color: #fff;
+    }
+
+    .image {
+      text-align: center;
+      margin: 20px;
+    }
+
+    .image img {
+      max-width: 100%;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nhon Thanh Do Pham </h1>
+      <img src="https://media.licdn.com/dms/image/D5603AQGBUiV98H6J1A/profile-displayphoto-shrink_800_800/0/1666390111099?e=2147483647&v=beta&t=1MXOQgU-x9nvNWhNaDmOV9aEKppEGBxNg9zBUOR8ZCQ">
+    <p>Game Developer</p>
+  </header>
+
+  <nav>
+    <a href="#resume">Resume</a>
+    <a href="https://www.linkedin.com/in/nhon-pham-785157189/" target="_blank">LinkedIn</a>
+    <a href="https://github.com/john-doe" target="_blank">GitHub</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>I am a new grad from Penn State University with a degree of Bachelor in Computer Science.
+          I am passionate about creating clean, responsive, and user-friendly interfaces that provide a great user experience.</p>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <div class="resume">
+            <h3>Education</h3>
+            <ul>
+                <li>- Bachelor of Science in Computer Science</li>
+                <li>- School: Penn State University</li>
+            </ul>
+            <h3>Experience</h3>
+            <ul>
+                <h4>Nittanny Market Web Development</h4>
+                <li>- Developed a webpage with user-friendly interface for selling and buying product</li>
+                <li>- Created and designed the page using HTML and CSS</li>
+            </ul>
+        </div>
+    </section>
+</main>
